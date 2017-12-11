@@ -1,5 +1,5 @@
 //word list
-var words = ["zorra", "gerudo", "goron", "deku", "hyrule", "link", "zelda", "ganondorf", "shiek", "triforce", "epona"];
+var words = ["zora", "gerudo", "goron", "deku", "hyrule", "link", "zelda", "ganondorf", "sheik", "triforce", "epona"];
 
 //variables defined prior to adjustments
 var wins = 0;
