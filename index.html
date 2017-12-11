@@ -6,36 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <!-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" -->
-</head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" </head>
 
-<body>
-    <div>
-        <p>Instructions: Try</p>
-    </div>
+    <body>
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <img class="img-responsive center-block" src="./assets/images/logo.png" alt="logo" style="width:50%">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4" style="overflow:auto;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 style="margin:5px 0px 5px 0px;">Hangman Instructions:</h3>
+                        </div>
+                        <div class="panel-body">
+                            Test your Legend of Zelda knowledge! Press letters on your keyboard to guess the answer.
+                            Choose wisely, or you will loose a chance. Keep in mind: it's dangerous to go alone!
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="text-align: center;">
+                        <div class="panel-heading">Your Word is:</div>
+                        <div class="panel-body">
+                            <div id="answerSpace"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" src="./assets/images/navi.png" alt="navi" style="width:190px; height:auto;">
+                    </div>
+                </div>
+                <div class="col-md-6">&nbsp;</div>
+                <div class="col-xs-12 col-md-2" style="overflow:auto; text-align: center;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Incorrect Guesses</div>
+                        <div class="panel-body" style="height: 50px;">
+                            <div id="incorrectGuesses"></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Wrong Guesses Remaining</div>
+                        <div class="panel-body">
+                            <div id="remainingGuesses">6</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Gameplay Stats</div>
+                        <div class="panel-body">
+                            <div>Wins:
+                                <span id="wins">0</span>
+                            </div>
+                            <div>Losses:
+                                <span id="losses">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div>
-        <h1>Your Word is:</h1>
-        <br>
-        <div id="answerSpace">_ _ _ _ _ _</div>
-    </div>
+            </div>
+        </div>
 
-    <div class="container">
-        <div id="chances"></div>
-        <div class="wins">0</div>
-        <div id="losses">0</div>
-        <div id="incorrectGuesses"></div>
-    </div>
+
+        <div class="panel-footer" style="text-align: center;">&copy; 2017 Anthony Kim</div>
 
 
 
 
-
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-</body>
+        <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    </body>
 
 
 </html>
